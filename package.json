@@ -1,0 +1,37 @@
+{
+  "name": "vksdet.net",
+  "version": "1.0.0",
+  "description": "Wagtail Django site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "del app\\static\\* && npx mix watch --hot",
+    "build": "rm -rf app/static/* && npx mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Wis13/vksdet.net.git"
+  },
+  "keywords": [
+    "django",
+    "wagtail",
+    "laravel-mix",
+    "blog"
+  ],
+  "author": "Vadym Koroliuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wis13/vksdet.net/issues"
+  },
+  "homepage": "https://github.com/Wis13/vksdet.net#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.62.1",
+    "sass-loader": "^12.1.0"
+  },
+  "dependencies": {
+    "postcss-sort-media-queries": "^5.1.0"
+  }
+}
