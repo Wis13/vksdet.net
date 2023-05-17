@@ -19,7 +19,7 @@ mix.options({
 })
 
 mix.browserSync({
-    proxy: 'localhost: 8000',
+    proxy: 'localhost:8000',
     open: false,
     notify: false,
     files: [
@@ -31,8 +31,8 @@ mix.autoload({
     jquery: ['$', 'window.jQuery', 'jQuery']
 })
 
-mix.copyDirectory('src/static', 'app/static')
+mix.copyDirectory('app/src/static', 'app/static')
 
-mix.js('src/js/main.js', 'js')
+mix.js('app/src/js/main.js', 'js')
 
-mix.sass('src/scss/main.scss', 'css')
+mix.sass('app/src/scss/main.scss', 'css')
